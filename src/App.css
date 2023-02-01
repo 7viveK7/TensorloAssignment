@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+.loader {
+  position: absolute;
+
+  height: 400px;
+  width: -webkit-fill-available;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spaceX-image {
+  width: 400px;
+  height: 70px;
+}
+
+.modal-main-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  position: absolute;
+}
+
+.modal-main {
+  margin: 49px;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 550px;
+  background-color: White;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.input-box {
+  padding-top: 10px;
+}
+
+.input-box p {
+  font-weight: 600;
+}
+
+.input-group {
+  width: 100%;
+  display: flex;
+  height: 40px;
+}
+
+.input-group input {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.input-group button {
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  cursor: pointer;
+  background-color: #002a70;
+  color: white;
+}
+
+.grid-box {
+  margin-top: 20px;
+  display: grid;
+}
+
+.container-left {
+  grid-column-start: 1;
+}
+
+.container-right {
+  grid-column-end: 4;
+}
+
+.container-left input {
+  width: 400px;
+  display: flex;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.container-right img {
+  width: 80%;
+  height: auto;
+  float: right;
+}
+
+.container-left span {
+  font-size: 14px;
+}
+
+.modal-button-share {
+  display: flex;
+  margin-top: 10px;
+  padding: 10px;
+  width: 70px;
+  align-items: center;
+  background-color: #002a70;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.close-button {
+  text-align: right;
+}
+
+.close-button button {
+  cursor: pointer;
+  background-color: #002a70;
+  color: white;
+}
+
+.error {
+  position: absolute;
+
+  height: 400px;
+  width: -webkit-fill-available;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.header {
+  background-color: #ffffffff;
+  box-shadow: grey 2px 0px 2px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 7vh;
+}
+
+.dropdown {
+  border: #ffffffff !important;
+  background-color: #ffffffff;
+  outline: none !important;
+}
+
+.section {
+  height: 88vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.dashboardheader {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+
+.dashboard {
+  width: 80%;
+  height: 80%;
+}
+
+.pagination {
+  position: relative;
+  top: -100;
+}
+
+.dashbordSection {
+  width: 100%;
+  height: 100%;
+}
+
+.closeButton {
+  cursor: pointer;
+  background: none !important;
+  /* background-color: #002a70; */
+  color: #a09999;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  font-weight: 600;
+}
+
+.closeButton:focus {
+  border: none;
+  outline: none;
+  color: #002a70;
+}
+
+.launchDetailsHeader {
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.youTubeIcon {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.success {
+  background: #00800030;
+
+  color: green;
+}
+
+.wikipediedetails {
+  text-align: start;
+  font-family: "Roboto";
+}
+
+ul {
+  padding: 0px;
+}
+
+.status {
+  font-family: "Roboto";
+  font-weight: 600;
+  align-self: flex-start;
+  margin-top: 7px;
+  padding: 3px 10px;
+  border-radius: 16px;
+}
+
+.failure {
+  background: #e215152e;
+
+  color: #6b000094;
+}
+
+.rocket {
+  width: 100px;
+}
+
+.mission {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.rocketType {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  height: 100px;
+  margin-right: 20px;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.wikipedie {
+  color: "blue";
+}
+
+.footer {
+  display: flex;
+
+  height: 40px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  align-items: center;
+  padding-right: 100px;
+  height: 40px;
+}
+
+ul li:last-child {
+  border-bottom: none !important;
+}
