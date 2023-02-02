@@ -87,11 +87,15 @@ const Modal = (props) => {
           </li>
           <li className="footer">
             <span>Manufacturer</span>
-            <span>{flightData.rocket.second_stage.payloads.manufacturer}</span>
+            <span>
+              {flightData.rocket.second_stage.payloads[0].manufacturer}
+            </span>
           </li>
           <li className="footer">
             <span>Nationality</span>
-            <span>{flightData.rocket.second_stage.payloads.nationality}</span>
+            <span>
+              {flightData.rocket.second_stage.payloads[0].nationality}
+            </span>
           </li>
           <li className="footer">
             <span>launch Date local</span>
@@ -99,11 +103,13 @@ const Modal = (props) => {
           </li>
           <li className="footer">
             <span>payload Type</span>
-            <span>{flightData.rocket.second_stage.payloads.payload_type}</span>
+            <span>
+              {flightData.rocket.second_stage.payloads[0].payload_type}
+            </span>
           </li>
           <li className="footer">
             <span>Orbit</span>
-            <span>{flightData.rocket.second_stage.payloads.orbit}</span>
+            <span>{flightData.rocket.second_stage.payloads[0].orbit}</span>
           </li>
           <li className="footer">
             <span>Launch Site</span>
