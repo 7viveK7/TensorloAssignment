@@ -53,7 +53,7 @@ export const StickyHeadTable = ({
                       hover
                       role="checkbox"
                       tabIndex={-1}
-                      className="fail"
+                      style={{ cursor: "pointer" }}
                       key={row.code}
                       onClick={() => onRowClick(row.No)}
                     >
@@ -103,17 +103,19 @@ export const StickyHeadTable = ({
           justifyContent: "flex-end",
         }}
       >
-        <Pagination
-          count={Math.round(LaunchesDetails.length / 12) + 1}
-          page={page}
-          onChange={handleChangePage}
-          rowsPerPage={rowsPerPage}
-          onRowsPerPageChange={handleChangeRowsPerPage}
-          variant="outlined"
-          shape="rounded"
-          defaultPage={3}
-          siblingCount={0}
-        />
+        {LaunchesDetails.length > 12 && (
+          <Pagination
+            count={Math.round(LaunchesDetails.length / 12) + 1}
+            page={page}
+            onChange={handleChangePage}
+            rowsPerPage={rowsPerPage}
+            onRowsPerPageChange={handleChangeRowsPerPage}
+            variant="outlined"
+            shape="rounded"
+            defaultPage={3}
+            siblingCount={0}
+          />
+        )}
       </div>
     </>
   );
