@@ -219,6 +219,10 @@
 
   color: green;
 }
+ 
+.st{
+  margin: 20px;
+}
 
 .wikipediedetails {
   text-align: start;
@@ -279,6 +283,6 @@ ul {
   height: 40px;
 }
 
-ul li:last-child {
-  border-bottom: none !important;
-}
+
+
+

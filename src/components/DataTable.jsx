@@ -39,7 +39,10 @@ export const StickyHeadTable = ({
               </TableRow>
             </TableHead>
 
-            <TableBody style={{ position: "relative" }}>
+            <TableBody
+              style={{ position: "relative" }}
+              className="launchesBody"
+            >
               {LaunchesDetails &&
                 LaunchesDetails.slice(
                   (page - 1) * rowsPerPage,
@@ -50,16 +53,27 @@ export const StickyHeadTable = ({
                       hover
                       role="checkbox"
                       tabIndex={-1}
+                      className="fail"
                       key={row.code}
                       onClick={() => onRowClick(row.No)}
                     >
                       {columns.map((column) => {
                         const value = row[column.id];
+
                         return (
                           <TableCell key={column.id}>
-                            {column.format && typeof value === "number"
-                              ? column.format(value)
-                              : value}
+                            <span
+                              className={
+                                ["Failure", "Success"].includes(value) &&
+                                `status ${
+                                  value === "Failure" ? "failure" : "success"
+                                }`
+                              }
+                            >
+                              {column.format && typeof value === "number"
+                                ? column.format(value)
+                                : value}
+                            </span>
                           </TableCell>
                         );
                       })}
